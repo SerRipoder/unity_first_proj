@@ -1,0 +1,29 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement; // LoadScene
+
+public class ObstacleBehaviour : MonoBehaviour {
+
+	[Tooltip("How long to wait before restarting the game")]
+	public float waitTime = 2.0f;
+
+	void OnCollisionEnter(Collision col)
+	{
+		if (col.gameObject.GetComponent<PlayerBehaviour>())
+		{
+			Destroy(col.gameObject);
+
+			Invoke("ResetGame", waitTime);
+		}
+	}
+
+	/// <summary>
+	/// Will restart the currently loaded level
+	/// </summary>
+	void ResetGame()
+	{
+		// Restarts the current level
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
+}
