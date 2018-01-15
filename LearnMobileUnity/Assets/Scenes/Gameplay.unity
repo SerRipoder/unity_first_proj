@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: c4fdbb13f4a5441108355a98b398d2aa,
     type: 2}
   m_UseShadowmask: 1
@@ -243,7 +242,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -431,5 +429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6f477932e2420ba28dc987d7f2b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dodgeSpeed: 5
-  rollSpeed: 6.8
+  dodgeSpeed: 10
+  rollSpeed: 7.02
+  swipeMove: 2
+  minSwipeDistance: 2
+  horizMovement: 0
