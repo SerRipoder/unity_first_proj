@@ -429,8 +429,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d6f477932e2420ba28dc987d7f2b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dodgeSpeed: 10
-  rollSpeed: 7.02
-  swipeMove: 2
-  minSwipeDistance: 2
+  dodgeSpeed: 5
+  rollSpeed: 4.4
+  swipeMove: 1
+  minSwipeDistance: 4
   horizMovement: 0
